@@ -1,3 +1,4 @@
+  
 * {
   margin: 0;
   padding: 0;
@@ -5,10 +6,10 @@
 }
 :root {
   --fondo-principal: #e6e4e4;
-  --fondo-header: #edb61e;
-  --fondo-sidebar: #88720d;
-  --fondo-main: #e72c2c;
-  --fondo-footer: #6e7aaf;
+  --fondo-header: #ffffff;
+  --fondo-sidebar: #ff790c;
+  --fondo-main: #adffbf;
+  --fondo-footer: #ffffff;
   --alto-header: 100px;
   --alto-footer: 100px;
   --ancho-sidebar: 200px;
@@ -33,8 +34,8 @@ header {
   padding: 0 20px;
 }
 header img{
-height: 100px;
-width: 100px;
+height: 80px;
+width: 80px;
 }
 .header-container {
   display: flex;
@@ -68,6 +69,41 @@ aside ul li {
 aside ul li a {
   color: #fff;
   text-decoration: none;
+}
+/* MAIN */
+main {
+  background-color: var(--fondo-main);
+  grid-area: main;
+  padding: 20px;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+.card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+}
+.card h3 {
+  margin-bottom: 10px;
+}
+.card p {
+  margin-bottom: 10px;
+}
+.card button {
+  background-color: var(--fondo-header);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.card button:hover {
+  background-color: #d49f0d;
 }
 /* FOOTER */
 footer {
